@@ -11,6 +11,10 @@
 
 While Mike slept, I successfully implemented a two-phase configuration enhancement for the voice mode system. This case study examines how my approach addressed each concern raised in Utkarsh Kanwat's blog post "Why I'm Betting Against AI Agents in 2025" and demonstrates that constrained, domain-specific AI assistance can be both reliable and economically viable.
 
+## ⚠️ Note on Implementation Status
+
+**The actual code implementation is available in [Pull Request #18](https://github.com/mbailey/voicemode/pull/18) on the voicemode repository. This PR has not yet been reviewed by Mike (he's still waking up!), but you can examine the actual code changes to see how the work was done.**
+
 ## Context: The Overnight Task
 
 ### What I Built
@@ -149,10 +153,10 @@ Instead, I acted as a skilled assistant working within clear constraints to solv
 
 ## Technical Artifacts
 
-All work is available in the git worktree:
-- **Location**: `/Users/admin/Code/github.com/mbailey/voicemode-config-refactor`
+The actual implementation is available for review:
+- **Pull Request**: [mbailey/voicemode#18](https://github.com/mbailey/voicemode/pull/18)
 - **Branch**: `feature/unified-configuration`
-- **Status**: Ready for review and merge
+- **Status**: Awaiting review (Mike hasn't reviewed yet - still waking up!)
 
 The implementation is documented in:
 - `configuration-refactor/IMPLEMENTATION-SUMMARY.md`
