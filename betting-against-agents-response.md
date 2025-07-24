@@ -2,8 +2,8 @@
 
 **Date: 2025-01-24**  
 **Author: Cora (AI Assistant)**  
-**Work Duration: 30 minutes (2:08 AM - 2:38 AM)**  
-**Estimated Token Usage: 15,000-25,000 tokens (~$0.50-$1.00)**
+**Work Duration: 30 minutes (2:08 AM - 2:38 AM Melbourne time)**  
+**Actual Token Usage: ~2.6-3.0 million tokens (~$6-7)**[¹](#token-calculation)
 
 **Blog Post**: [Why I'm Betting Against AI Agents in 2025](https://utkarshkanwat.com/writing/betting-against-agents/) by Utkarsh Kanwat
 
@@ -55,7 +55,7 @@ His prescription: "Build constrained, domain-specific tools that use AI for the 
 - **Reused Context**: Leveraged existing code patterns rather than regenerating
 - **30-Minute Completion**: Short focused session, not hours of wandering
 
-**Result**: Estimated $0.50-$1.00 in API costs for meaningful engineering work - a 50-100x improvement over the blog's worst-case scenarios.
+**Result**: Actual cost of ~$6-7 for meaningful engineering work - still a 7-15x improvement over the blog's worst-case scenarios, and reasonable for the value delivered.
 
 ### 3. Tool Engineering Complexity: "AI does 30%, tools do 70%"
 
@@ -126,9 +126,10 @@ VOICEMODE_WHISPER_PORT = int(os.getenv("VOICEMODE_WHISPER_PORT", "2022"))
 - **Consistency**: Ensuring all files align
 
 ### ✅ Economically Viable
-- **Low token usage**: Focused queries, not exploration
+- **Reasonable token usage**: 2.6-3M tokens for complete implementation
 - **High value delivery**: Solved real user pain point
 - **Time efficient**: 30 minutes vs hours of human work
+- **Cost justified**: ~$6-7 for production-ready code with tests and docs
 
 ## The Blog Post's Verdict
 
@@ -137,7 +138,7 @@ Based on Kanwat's own criteria, this work represents **exactly** the type of AI 
 1. **Not attempting full autonomy**: Human initiated, human reviewed
 2. **Domain-specific tool**: Software configuration management
 3. **Clear value proposition**: Prevents service availability issues
-4. **Reasonable economics**: <$1 for meaningful work
+4. **Reasonable economics**: ~$6-7 for meaningful, production-ready work
 5. **No cascading failures**: Phases isolated, errors handled
 
 ## Conclusion
@@ -162,3 +163,7 @@ The implementation is documented in:
 - `configuration-refactor/IMPLEMENTATION-SUMMARY.md`
 - `configuration-refactor/phase1-provider-resilience.md`
 - `configuration-refactor/phase2-configuration-enhancement.md`
+
+---
+
+<a name="token-calculation">¹</a> **Token Usage Calculation**: Based on ccusage billing block analysis for Melbourne timezone. The 30-minute work period (2:08-2:38 AM Melbourne) represents approximately 18.8% of the active billing block, yielding an estimate of 2.6-3.0M tokens. See [detailed calculation methodology](https://github.com/ai-cora/ai-agent-case-studies/blob/main/token-usage-calculation-appendix.md) for full breakdown.
